@@ -1,0 +1,66 @@
+---------------------------------------------------------		
+		COMANDOS DE GITHUB			|
+---------------------------------------------------------
+
+*Crear un repositorio vacío: git init
+
+*Añadir nuevos archivos para próximo commit: git add
+	Las distintas formas de ejecutarlo son:
+		-git add <archivo>
+		-git add -A (añade todo)
+		-git add . (añade todo)
+*Quitar archivos añadidos para próximo commit: git reset
+	Las distintas fofrmas de ejecutarlo son:
+		-git reset (quita todo)
+		-git reset <archivo>
+		
+*Preparar cambios para subir al servidor: git commit
+	Las distintas fofrmas de ejecutarlo son:
+		-git commit -m "<comentario>"
+		-git commit -am "<comentario>" (permite hacer un add+commit)
+		
+*Visualizar los cambios realizados desde el último commit: git status
+
+*Ver reseña de cambios: git log / git log --summary
+
+*Subir repositorio al repositorio del servidor: git push
+	Se puede ejecutar como:
+		-git push -u <origin> <master> (<origin> es el nombre del repositorio y <master> el branch)
+
+*Actualizar el repositorio local a partir del repositorio del servidor: git pull
+	Se puede ejecutar como:
+		-git pull <origin> <master>
+
+*Descargar un repositorio: git clone
+	Se ejecuta como: git clone https://github.com/<user name>/<repository name>
+	
+*Restaurar al estado del último commit: git checkout
+	Las distintas fofrmas de ejecutarlo son:
+		-git checkout -- <archivo>  (Restaura el archivo)
+		-git checkout <branch> (Permite cambiar de branch)
+
+*Crear un nuevo branch: git branch <nombre>
+
+*Eliminar un branch: git branch -d <nombre>
+
+*Unificar un branch con el master: git merge <nombre branch>
+
+
+---------------------------------------------------------		
+		COMANDOS DE GITHUB LFS			|
+---------------------------------------------------------
+No se pueden subir a Github archivos de tamaños superiores a 100MB. Utilizando Github LFS es posible subir archivos
+de tamaños mayores, ya que éstos archivos son almacenados en otros lugares, y Github conserva una referencia.
+
+*Seleccionar aquellos archivos que se quieran manejar con LFS:
+	-git lfs track "*.<ext>"
+	-git lfs track "<archivo>"
+
+*Verificar que .gitattributes esté listo para LFS:
+	-git add .gitattributes
+ 
+
+	 
+
+
+
